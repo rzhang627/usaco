@@ -5,15 +5,16 @@
 using namespace std;
 
 int main() {
-	int k, n; cin >> k >> n;
 	// want to find the number of consistent pairs, meaning the rankings
     // are consistent through all k sessions
     // go through all pairs and find the most
     freopen("gymnastics.in", "r", stdin);
     freopen("gymnastics.out", "w", stdout);
+    int k, n; cin >> k >> n;
 
     // traverse in 2D array until you find the first element in the pair
     vector<vector<int>> vals(k, vector<int>(n));
+    int a;
     for (int i = 0; i < k; i++) {
         for (int j = 0; j < n; j++) {
             cin >> vals[i][j];
@@ -22,7 +23,6 @@ int main() {
 
     int first = 0;
     int count = 0;
-    int a;
     for (int i = 1; i <= n; i++) {
         for (int j = i + 1; j <= n; j++) {
             for (a = 0; a < k; a++) {
@@ -42,10 +42,9 @@ int main() {
             }
             if (first > 0) {
                 count++;
-                cout << "here";
             }
             first = 0;
         }
     }
-    cout << "here" << endl;
+    cout << count;
 }
