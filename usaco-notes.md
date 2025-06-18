@@ -13,3 +13,4 @@
 - When debugging, the most common type of error I've encountered thus far is usually an incorrect implementation of correct logic
     - Be patient and think through your logic thoroughly
 - In the problem Cow Gymnastics from USACO 2019 December (Bronze), the only error was not using `freopen()` before using the command `cin`, so make sure to double check the sequence and relative ordering of instructions executed
+- Double check which indices you are using to index vectors and arrays
