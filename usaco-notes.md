@@ -7,6 +7,8 @@
 ## Problem-Solving Strategies
 
 - Ensuring a complete understanding of the problem statement is the first step in problem solving
+- Consider the differences between traversing arrays from an index outwards to traversing from left-to-right then right-to-left
+    - It is simpler to do the latter, and finding ways to change the approach from the former to the latter is desirable
 
 ## Debugging
 
